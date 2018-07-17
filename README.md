@@ -1,24 +1,19 @@
-# Text-Parser-using-Spark
-Large body of semi structured text parser
+## Text-Parser-using-Spark
+***Large body of semi structured text parser***
 
 Write a scanner and parser that can separate the body of the book content into hierarchical structure.
 - Detect books, chapters, paragraphs
 - Structure the text into the following nested format
 
-
-***Book number and year***
-
-    -> Chapter Index
-  
-        -> Paragraph Index
-      
-            -> Sentence Index
-          
-                -> Sentence Text
-              
-                -> Word Index
-              
-                    -> Word 
+Structure:
+    
+    Book number and year
+        -> Chapter Index
+            -> Paragraph Index
+                -> Sentence Index          
+                    -> Sentence Text
+                    -> Word Index
+                        -> Word 
                   
 ## My approach : 
 Using [Spark Dataframe](https://spark.apache.org/docs/2.3.0/sql-programming-guide.html) as container to serialize the large body of text. [RegexToknizer](https://spark.apache.org/docs/latest/ml-features.html#tokenizer) are applied to detect the structure.
