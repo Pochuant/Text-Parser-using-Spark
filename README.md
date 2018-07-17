@@ -2,7 +2,7 @@
 ***Large body of semi structured text parser***
 
 Write a scanner and parser that can separate the body of the book content into hierarchical structure.
-- Detect books, chapters, paragraphs
+- Detect books, chapters, paragraphs, sentences, words
 - Structure the text into the following nested format
 
 Structure:
